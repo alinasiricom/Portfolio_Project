@@ -1,0 +1,176 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h2 class="heading">About Me</h2>
+            </div>
+            <div class="col-md-8">
+                <p>
+                    I am responsible, I have a great passion to solve a real problem and I am ready to improve my
+                    work with all my ability.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End #about -->
+
+<div id="experience" class="background-alt">
+    <h2 class="heading">Experience</h2>
+    <div id="experience-timeline">
+        <div data-date="Jan 2019 – Jan 2021">
+            <h3>Arad</h3>
+            <h4>Android Developer</h4>
+            <p>
+                Teamwork<br>Documentary writer<br>Responsible
+            </p>
+        </div>
+
+        <div data-date="Sept 2018 – Oct 2018">
+            <h3>Gratech</h3>
+            <h4>Web Intern</h4>
+            <p>
+                Html, CSS
+            </p>
+        </div>
+    </div>
+</div>
+<!-- End #experience -->
+
+<div id="education">
+    <h2 class="heading">Education</h2>
+    <div class="education-block">
+        <h3>Allame-Tabatabaii University of Tehran</h3>
+        <span class="education-date">Sept 2023 - Present</span>
+        <h4>Master of Economics</h4>
+        <p>
+
+        </p>
+    </div>
+    <!-- End .education-block -->
+
+    <div class="education-block">
+        <h3>Vali-e-Asr Rafsanjan University</h3>
+        <span class="education-date">Sept 2016 - Apr 2021</span>
+        <h4>Bachelor in Computer Engineering</h4>
+        <ul>
+            <li>
+                In the top 5 students
+            </li>
+            <li>
+                Achievement in ACM
+            </li>
+            <li>
+                TA
+            </li>
+            <li>
+                Build an Spam-detection ML Model
+            </li>
+        </ul>
+    </div>
+    <!-- End .education-block -->
+</div>
+<!-- End #education -->
+
+<div id="projects" class="background-alt">
+    <h2 class="heading">Projects</h2>
+    <div class="container">
+        <div class="row">
+            <div class="project shadow-large">
+                <div class="project-image">
+                    <img src="{% static 'images/project.jpg' %}" />
+                </div>
+                <!-- End .project-image -->
+                <div class="project-info">
+                    <h3>Hello Django</h3>
+                    <p>
+                        my django training course project in maktabkhooneh.
+                    </p>
+                    <a href="https://github.com/alinasiricom/Hello_Django" target="_blank">View Project</a>
+                </div>
+                <!-- End .project-info -->
+            </div>
+            <!-- End .project -->
+
+            <div class="project shadow-large">
+                <div class="project-image">
+                    <img src="{% static 'images/project.jpg' %}" />
+                </div>
+                <!-- End .project-image -->
+                <div class="project-info">
+                    <h3>Portfolio</h3>
+                    <p>
+                        My cv is written in a simple website template. 
+                    </p>
+                    <a href="https://github.com/alinasiricom/Portfolio_Project" target="_blank">View Project</a>
+                </div>
+                <!-- End .project-info -->
+            </div>
+            <!-- End .project -->
+        </div>
+    </div>
+</div>
+<!-- End #projects -->
+
+<div id="skills">
+    <h2 class="heading">Skills</h2>
+    <ul>
+        <ul>
+            <li>Django</li>
+        </ul>
+        <ul>
+            <li>Python:</li>
+            <li>OOP</li>
+            <li>Data Libraries</li>
+        </ul>
+        <ul>
+            <li>SQL:</li>
+            <li>PostgreSQL</li>
+            <li>Mysql</li>
+        </ul>
+        <ul>
+            <li>Teamwork:</li>
+            <li>Git</li>
+            <li>Design Pattern</li>
+            <li>Scrum</li>
+        </ul>
+        <ul>
+            <li>MS Office</li>
+        </ul>
+
+    </ul>
+</div>
+<!-- End #skills -->
+
+<div id="skills"  class="background-alt"> 
+    <h2 class="heading">Languages</h2>
+    <ul>
+        <li>English</li>
+        <li>Persian</li>
+    </ul>
+</div>
+<!-- End #languages -->
+
+<div id="contact">
+    <div id="skills">
+        <h2 class="heading">Contact</h2>
+        <ul>
+            <li>Email:</li>
+            <li>{{email}}</li>
+        </ul>
+        <ul>
+            <li>Location:</li>
+            <li>{{Location}}</li>
+        </ul>
+    </div>
+    <!-- End #contact-form -->
+</div>
+<!-- End #contact -->
+
+
+{% endblock %}
